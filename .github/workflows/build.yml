@@ -14,3 +14,9 @@ jobs:
 
     - name: Build
       run: make -j2
+
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: netloader.nro
+        path: netloader.nro
