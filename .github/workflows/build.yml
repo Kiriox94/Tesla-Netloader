@@ -18,5 +18,5 @@ jobs:
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
-        name: netloader.nro
-        path: netloader.nro
+        name: netloader.ovl
+        path: netloader.ovl
