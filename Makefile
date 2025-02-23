@@ -40,7 +40,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 APP_TITLE	:=	Tesla Netloader
 APP_VERSION :=	1.0.0
 
-TARGET		:=	$(notdir $(CURDIR))
+TARGET		:=	netloader
 BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
@@ -80,7 +80,7 @@ LIBDIRS	:= $(PORTLIBS) $(LIBNX)
 ifneq ($(BUILD),$(notdir $(CURDIR)))
 #---------------------------------------------------------------------------------
 
-export OUTPUT	:=	netloader
+export OUTPUT	:=	$(CURDIR)/$(TARGET)
 export TOPDIR	:=	$(CURDIR)
 
 export VPATH	:=	$(foreach dir,$(SOURCES),$(CURDIR)/$(dir)) \
